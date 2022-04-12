@@ -24,7 +24,7 @@ body{
     height: 20%;
     /* background-color: pink; */
     /* background-image: linear-gradient (to right , pink , white); */
-    background-image: linear-gradient(to right , white, rgb(255, 244, 245) , white);
+    background-image: linear-gradient(to right , white, rgb(255, 245, 246) , white);
 
     display: flex;
     justify-content: center;
@@ -56,6 +56,10 @@ body{
 
 .history{
     background-color: rgb(255, 253, 230);
+    overflow-y: auto    ;
+
+    
+    
 }
 
 
@@ -73,15 +77,45 @@ h1{
 
 
 
-li{
-    width: 75%;
-    height: min-content;
-    /* text-align: center; */
-    background-color: rgb(255, 254, 245);
+.li{
 
+    width: 75%;
+    height: 20%;
+    /* text-align: center; */
+    /* background-color: rgb(255, 251, 206); */
+    
     list-style: none;
 
     display: flex;
     justify-content: space-around;
-    align-items: center;
+
+    /* border-left: 1px solid orange; */
+
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+.addition{
+
+    background-color: rgb(226, 255, 220);
+    border-left: 1px solid green;
+
+}
+
+
+.minus{
+    background-color: rgb(255, 206, 206);
+    border-left: 1px solid red;
+
+
+}
+
+
+
+
+
+.form-control{
+    width: 65%;
 }

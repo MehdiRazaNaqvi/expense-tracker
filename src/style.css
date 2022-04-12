@@ -1,0 +1,87 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+
+
+.pehla{
+    width: 80%;
+    height: 20%;
+    /* background-color: pink; */
+    /* background-image: linear-gradient (to right , pink , white); */
+    background-image: linear-gradient(to right , white, rgb(255, 244, 245) , white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dosra{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.profit , .loss , .history{
+    width: 30%;
+    height: 40%;
+    background-color: rgb(255, 240, 240);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.history{
+    background-color: rgb(255, 253, 230);
+}
+
+
+.profit{
+background-color: rgb(233, 255, 233);
+}
+
+
+h1{
+    color: rgb(44, 44, 44);
+    font-size: xx-large;
+    font-weight: 300;
+    font-family:cursive;
+}
+
+
+
+li{
+    width: 75%;
+    height: min-content;
+    /* text-align: center; */
+    background-color: rgb(255, 254, 245);
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

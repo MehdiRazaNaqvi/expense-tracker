@@ -20,8 +20,8 @@ body{
 
 
 .pehla{
-    width: 80%;
-    height: 20%;
+    width: 65%;
+    height: 10%;
     /* background-color: pink; */
     /* background-image: linear-gradient (to right , pink , white); */
     background-image: linear-gradient(to right , white, rgb(255, 245, 246) , white);
@@ -32,8 +32,8 @@ body{
 }
 
 .dosra{
-    width: 80%;
-    height: 80%;
+    width: 65%;
+    height: 90%;
     background-color: rgb(255, 255, 255);
 
     display: flex;
@@ -99,14 +99,14 @@ h1{
 
 .addition{
 
-    background-color: rgb(226, 255, 220);
+    background-color: rgb(240, 255, 237);
     border-left: 1px solid green;
 
 }
 
 
 .minus{
-    background-color: rgb(255, 206, 206);
+    background-color: rgb(255, 238, 238);
     border-left: 1px solid red;
 
 
@@ -119,3 +119,7 @@ h1{
 .form-control{
     width: 65%;
 }
+
+
+
+

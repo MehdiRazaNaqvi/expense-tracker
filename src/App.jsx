@@ -11,6 +11,8 @@ const App = (props) => {
   const [loss_report, setloss] = useState({ des: "", amount: 0 ,  add : false });
 
 
+  let date = new Date().toLocaleTimeString();
+
 
 
   return (
@@ -23,7 +25,7 @@ const App = (props) => {
 
       
 
-      <div className="pehla"><h1> Balance : {props.bal}</h1></div>
+      <div className="pehla"><h1>  {props.bal}</h1></div>
 
 
 
@@ -34,11 +36,11 @@ const App = (props) => {
           setProfit({ ...profit_report, amount: Number(e.target.value) })
         }
 
-          type="text" className="form-control" /> <input className="form-control" onChange={(e) => setProfit({ ...profit_report, des: e.target.value })} type="text" /> <button className="btn btn-outline-success" onClick={() => props.profit(profit_report)} >Submit</button> </div>
+          type="text" className="form-control" placeholder="Amount" /> <input className="form-control" onChange={(e) => setProfit({ ...profit_report, des: e.target.value })} type="text" placeholder="Description" /> <button className="btn btn-outline-success" onClick={() => props.profit(profit_report)} >Submit</button> </div>
 
 
 
-        <div className="loss"> <input className="form-control" onChange={(e) => setloss({ ...loss_report, amount: Number(e.target.value) })} type="text" /><input onChange={(e) => setloss({ ...loss_report, des: e.target.value })} className="form-control" type="text" /> <button className="btn btn-outline-danger" onClick={() => props.loss(loss_report)} >Submit</button> </div>
+        <div className="loss"> <input className="form-control" onChange={(e) => setloss({ ...loss_report, amount: Number(e.target.value) })} type="text" placeholder="Amount" /><input onChange={(e) => setloss({ ...loss_report, des: e.target.value })} className="form-control" type="text" placeholder="Description" /> <button className="btn btn-outline-danger" onClick={() => props.loss(loss_report)} >Submit</button> </div>
 
 
         <div className="history" >
@@ -46,7 +48,7 @@ const App = (props) => {
           {props.history.map((v, i) =>
 
 
-            <li className={props.history[i].add == true ? "li addition" : "li minus"} key={i}> <p>{v.amount}</p> <p>{v.des}</p></li>
+            <li className={props.history[i].add == true ? "li addition" : "li minus"} key={i}> <p>{v.amount}</p> <p>{v.des}</p> <p>{date}</p>  </li>
 
 
 

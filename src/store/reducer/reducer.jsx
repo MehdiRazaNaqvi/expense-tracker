@@ -1,6 +1,6 @@
 const initial = {
 
-    bal: 200,
+    bal: 0,
     history: [],
 
      
